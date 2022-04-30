@@ -1,0 +1,27 @@
+.header {
+  height: 96px;
+
+  &__content {
+    padding: 0 12px 13px 0;
+    justify-content: flex-end;
+    width: 100%;
+    border-bottom: 2px solid black;
+
+    &.opened {
+      flex-direction: row-reverse;
+      justify-content: flex-start;
+      width: max-content;
+      margin-left: auto;
+    }
+  }
+
+  &__text {
+    font-family: Nagoda, sans-serif;
+    font-size: 24px;
+    margin-bottom: 5px;
+  }
+
+  &__logo, &__text {
+    margin-left: 12px;
+  }
+}

@@ -1,0 +1,11 @@
+.action-slider {
+  &__footer {
+    &-btns {
+      .nav-btn {
+        &:last-child {
+          margin-left: 24px;
+        };
+      }
+    }
+  }
+}

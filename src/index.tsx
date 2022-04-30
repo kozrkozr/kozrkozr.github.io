@@ -1,12 +1,29 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
+import './index.scss';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import About from './routes/about/About';
+import Books from './routes/books/Books';
+import HealthyFood from './routes/about/HealthyFood';
+import WholePlantDiet from './routes/about/WholePlantDiet';
+import Vegetarianism from './routes/about/Vegetarianism';
+import StepToHealthyFood from './routes/about/StepToHealthyFood';
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<App />} />
+        <Route path="/books" element={<Books />} />
+        <Route path="/healthy-food" element={<HealthyFood />} />
+        <Route path="/healthy-food/step" element={<StepToHealthyFood />} />
+        <Route path="/whole-plant-diet" element={<WholePlantDiet />} />
+        <Route path="/vegetarianism" element={<Vegetarianism />} />
+        <Route path="/about" element={<About />} />
+      </Routes>
+    </BrowserRouter>
   </React.StrictMode>,
   document.getElementById('root')
 );
