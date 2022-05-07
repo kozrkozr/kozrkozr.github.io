@@ -167,6 +167,10 @@ code {
   margin-left: 24px;
 }
 
+.ml-8 {
+  margin-left: 8px;
+}
+
 .ml-10 {
   margin-left: 10px;
 }
@@ -261,6 +265,11 @@ code {
   padding: 24px;
 }
 
+.py-12 {
+  padding-top: 12px;
+  padding-bottom: 12px;
+}
+
 .py-16 {
   padding-top: 16px;
   padding-bottom: 16px;
@@ -279,6 +288,11 @@ code {
 .px-24 {
   padding-left: 24px;
   padding-right: 24px;
+}
+
+.px-44 {
+  padding-left: 44px;
+  padding-right: 44px;
 }
 
 .background-light-brown {
@@ -369,6 +383,10 @@ ul.bordered {
 
 .text-align-end {
   text-align: end;
+}
+
+.text-align-center {
+  text-align: center;
 }
 
 textarea {

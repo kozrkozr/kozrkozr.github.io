@@ -1,0 +1,9 @@
+.places-to-eat {
+  min-height: 100vh;
+}
+
+.place {
+  &__img {
+    height: 196px;
+  }
+}

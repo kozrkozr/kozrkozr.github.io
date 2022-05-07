@@ -10,6 +10,7 @@ import HealthyFood from './routes/about/HealthyFood';
 import WholePlantDiet from './routes/about/WholePlantDiet';
 import Vegetarianism from './routes/about/Vegetarianism';
 import StepToHealthyFood from './routes/about/StepToHealthyFood';
+import PlacesToEat from './routes/places-to-eat/PlacesToEat';
 
 ReactDOM.render(
   <React.StrictMode>
@@ -22,6 +23,7 @@ ReactDOM.render(
         <Route path="/whole-plant-diet" element={<WholePlantDiet />} />
         <Route path="/vegetarianism" element={<Vegetarianism />} />
         <Route path="/about" element={<About />} />
+        <Route path="/places-to-eat" element={<PlacesToEat />} />
       </Routes>
     </BrowserRouter>
   </React.StrictMode>,

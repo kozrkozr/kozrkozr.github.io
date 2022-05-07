@@ -21,7 +21,7 @@ export const NAVIGATION_ITEMS: NavigationItem[] = [
     label: 'Рецепти'
   },
   {
-    url: '',
+    url: '/places-to-eat',
     label: 'Заклади харчування'
   }
 ];
@@ -155,7 +155,9 @@ function App() {
         </div>
 
         <div className="d-flex">
-          <button className="btn">Більше</button>
+          <button className="btn" onClick={() => navigate('/places-to-eat')}>
+            Більше
+          </button>
         </div>
       </section>
 
