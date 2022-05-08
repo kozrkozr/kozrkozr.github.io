@@ -82,7 +82,7 @@ export function Slider({ items, renderDescription, handleItemChange, handleMoreB
         </div>
         <TinySlider settings={getSettings()} ref={(ts) => setSliderRef(ts)} onIndexChanged={handleIndexChanged}>
           {items.map((item, index) => (
-            <div className="slider__item">
+            <div className="slider__item" key={index.toString()}>
               <div className="slider__item-nav" onClick={() => onGoTo('prev')} />
               <div className="slider__item-nav" onClick={() => onGoTo('next')} />
               <div key={index} className="slider__item-description">

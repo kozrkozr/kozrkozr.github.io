@@ -17,7 +17,7 @@ export const NAVIGATION_ITEMS: NavigationItem[] = [
     label: 'Книги'
   },
   {
-    url: '',
+    url: '/recipes',
     label: 'Рецепти'
   },
   {
@@ -105,7 +105,9 @@ function App() {
         </div>
 
         <div className="d-flex justify-end">
-          <button className="btn">Більше</button>
+          <button className="btn" onClick={() => navigate('/recipes')}>
+            Більше
+          </button>
         </div>
       </section>
 
@@ -119,8 +121,8 @@ function App() {
 
         <ul className="bordered">
           {['Девід Аттенборо: Життя на нашій планеті', 'Роберт Кеннер: Корпорація «Їжа»', 'Лі Фалкерсон: Виделки замість ножів'].map(
-            (film) => (
-              <li className="d-flex align-center">
+            (film, index) => (
+              <li className="d-flex align-center" key={index}>
                 <img src={`${process.env.PUBLIC_URL}/icons/circled-play.svg`} />
                 <span className="ml-24 font-weight-400 font-size-md">{film}</span>
               </li>
@@ -171,8 +173,8 @@ function App() {
             `${process.env.PUBLIC_URL}/icons/figma.svg`,
             `${process.env.PUBLIC_URL}/icons/instagram.svg`,
             `${process.env.PUBLIC_URL}/icons/telegram.svg`
-          ].map((src) => (
-            <a href="/" className="mr-12">
+          ].map((src, index) => (
+            <a key={index} href="/" className="mr-12">
               <img src={src} />
             </a>
           ))}
