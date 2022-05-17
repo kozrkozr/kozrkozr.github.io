@@ -1,6 +1,7 @@
 import React from 'react';
 import './Recipe-preview.scss';
 import { CookingComplexity, FoodType, RecipeBase } from './api';
+import { useNavigate } from 'react-router-dom';
 
 const RecipePreview = ({ recipe }: { recipe: RecipeBase }) => {
   const vegetarianIconUrl = `${process.env.PUBLIC_URL}/icons/vegetarian.svg`;
@@ -12,8 +13,10 @@ const RecipePreview = ({ recipe }: { recipe: RecipeBase }) => {
     [CookingComplexity.HARD]: 'складно'
   };
 
+  const navigate = useNavigate();
+
   return (
-    <div className="recipe-preview w-100">
+    <div className="recipe-preview w-100" onClick={() => navigate(`/recipes/${recipe.id}`)}>
       <div className="mb-12 recipe-preview__cover w-100" style={{ backgroundImage: `url(${recipe.imgUrl})` }} />
 
       <div className="font-weight-500 font-size-md mb-12">{recipe.name}</div>

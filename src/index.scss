@@ -74,6 +74,10 @@ code {
   justify-content: space-between;
 }
 
+.justify-around {
+  justify-content: space-around;
+}
+
 .justify-center {
   justify-content: center;
 }
@@ -157,6 +161,10 @@ code {
 
 .mb-10 {
   margin-bottom: 10px;
+}
+
+.mb-12 {
+  margin-bottom: 12px;
 }
 
 .mb-20 {
@@ -249,6 +257,10 @@ code {
   margin-bottom: 4px;
 }
 
+.mb-16 {
+  margin-bottom: 16px;
+}
+
 .mb-36 {
   margin-bottom: 36px;
 }
@@ -261,8 +273,16 @@ code {
   padding-top: 40px;
 }
 
+.pt-24 {
+  padding-top: 24px;
+}
+
 .pb-28 {
   padding-bottom: 28px;
+}
+
+.pb-16 {
+  padding-bottom: 16px;
 }
 
 .pl-12 {
@@ -368,6 +388,10 @@ ul.bordered {
 
 .font-style-italic {
   font-style: italic;
+}
+
+.font-size-xsm {
+  font-size: 12px;
 }
 
 .font-size-sm {

@@ -12,6 +12,7 @@ import Vegetarianism from './routes/about/Vegetarianism';
 import StepToHealthyFood from './routes/about/StepToHealthyFood';
 import PlacesToEat from './routes/places-to-eat/PlacesToEat';
 import Recipes from './routes/recipes/Recipes';
+import RecipeInfo from './routes/recipes/Recipe-info';
 
 ReactDOM.render(
   <React.StrictMode>
@@ -26,6 +27,7 @@ ReactDOM.render(
         <Route path="/about" element={<About />} />
         <Route path="/places-to-eat" element={<PlacesToEat />} />
         <Route path="/recipes" element={<Recipes />} />
+        <Route path="/recipes/:id" element={<RecipeInfo />} />
       </Routes>
     </BrowserRouter>
   </React.StrictMode>,
