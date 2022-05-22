@@ -31,7 +31,7 @@ function RecipeInfo() {
 
         <div className="recipe-info__name px-24 pb-16">
           <div className="font-weight-500 font-size-md mb-16">{recipe.name}</div>
-          <div className="font-weight-300 mb-16">{recipe.name}</div>
+          <div className="font-weight-300 mb-16">{recipe.comment}</div>
           <div className="d-flex">
             <img src={recipe.foodType?.type === FoodType.VEGETARIAN ? vegetarianIconUrl : veganIconUrl} />
             <span className="font-weight-300 font-size-xsm color-muted">{recipe.foodType?.name}</span>

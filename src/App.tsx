@@ -43,8 +43,10 @@ function App() {
 
   return (
     <div className="app">
-      <Header menuOpened={menuOpened} />
-      <MenuToggle menuOpenedHandler={setMenuOpened} />
+      <div className="app__header">
+        <Header menuOpened={menuOpened} />
+        <MenuToggle menuOpenedHandler={setMenuOpened} />
+      </div>
 
       {menuOpened && (
         <div className="navigation">
@@ -73,6 +75,7 @@ function App() {
               <p className="font-size-sm line-height-md">{item.description}</p>
             </div>
           )}
+          navigation={() => navigate('/books')}
         />
       </section>
 
@@ -163,22 +166,8 @@ function App() {
         </div>
       </section>
 
-      <section className="w-100 px-24">
+      <section className="w-100 px-24 mb-20">
         <Review />
-      </section>
-
-      <section className="p-24 d-flex justify-between align-center">
-        <div className="d-flex">
-          {[
-            `${process.env.PUBLIC_URL}/icons/figma.svg`,
-            `${process.env.PUBLIC_URL}/icons/instagram.svg`,
-            `${process.env.PUBLIC_URL}/icons/telegram.svg`
-          ].map((src, index) => (
-            <a key={index} href="/" className="mr-12">
-              <img src={src} />
-            </a>
-          ))}
-        </div>
       </section>
 
       <Outlet />

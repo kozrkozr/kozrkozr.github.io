@@ -2,6 +2,7 @@ import React, { ReactComponentElement } from 'react';
 import './ActionSlider.scss';
 import TinySlider, { TinySliderInfo, TinySliderSettings } from 'tiny-slider-react';
 import NavButton, { NavButtonDirection } from '../nav-button/NavButton';
+import { useNavigate } from 'react-router-dom';
 
 type RenderFn<T> = (data?: T) => ReactComponentElement<any>;
 
@@ -16,6 +17,7 @@ export interface ActionSliderProps<T = any> {
   renderHeader: RenderFn<T>;
   renderContent: RenderFn<T>;
   items?: T[];
+  navigation?: Function;
 }
 
 export interface ActionSliderState {
@@ -91,7 +93,7 @@ class ActionSlider<T = any> extends React.Component<ActionSliderProps<T>, Action
             <NavButton direction={NavButtonDirection.FORWARD} clickHandler={() => this.onGoTo('next')} disabled={!this.state.hasNext} />
           </div>
 
-          <button className="btn">Більше</button>
+          <button className="btn" onClick={() => this.props.navigation?.()}>Більше</button>
         </div>
       </div>
     );

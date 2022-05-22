@@ -30,7 +30,7 @@ function PlacesToEat() {
 
   return (
     <div className="places-to-eat">
-      <div className="mb-40">
+      <div className="mb-40 position-sticky">
         <DynamicHeader title={'Заклади харчування'} />
       </div>
 
@@ -52,7 +52,7 @@ function PlacesToEat() {
         places.map((place, index) => (
           <div className="place d-flex flex-column px-24 mb-72 w-100" key={index}>
             <img className="w-100 place__img mb-8" src={place.imageUrl} />
-            <div className="place__title font-size-lg font-weight-400">{place.name}</div>
+            <div className="place__title font-size-lg font-weight-400 mb-8">{place.name}</div>
             <div className="place__description font-weight-300 line-height-lg mb-8">{place.description}</div>
             <div className="place__address d-flex align-center">
               <img src={`${process.env.PUBLIC_URL}/icons/location.svg`} />

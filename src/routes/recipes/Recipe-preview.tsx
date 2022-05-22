@@ -29,7 +29,7 @@ const RecipePreview = ({ recipe }: { recipe: RecipeBase }) => {
           </div>
         )}
         <div className="d-flex align-center ml-12">
-          <img src={`${process.env.PUBLIC_URL}/icons/clock.svg`} />
+          <img src={`${process.env.PUBLIC_URL}/icons/clock.svg`} className="mr-4"/>
           <span>{recipe.cookingTime} хв</span>
         </div>
         <div className="recipe-preview__complexity ml-12 d-flex align-center">

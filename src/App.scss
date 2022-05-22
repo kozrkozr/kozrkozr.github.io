@@ -1,6 +1,12 @@
 .app {
   position: relative;
 
+  &__header {
+    position: sticky;
+    top: 0;
+    z-index: 999999;
+  }
+
   .navigation {
     position: absolute;
     width: 100%;

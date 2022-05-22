@@ -28,13 +28,13 @@ function Recipes() {
 
   return (
     <div className="recipes">
-      <div className="mb-52">
+      <div className="mb-52 position-sticky">
         <DynamicHeader title={'Рецепти'} />
       </div>
 
       <div className="background-light-brown py-40 px-24 mb-40">
         <p className="font-weight-300">
-          &nbsp;У кожній страві із списку використовуються корисні для здоров’я продукти, які не завдають шкоди організму.
+          &nbsp;&nbsp;У кожній страві із списку використовуються корисні для здоров’я продукти, які не завдають шкоди організму.
           <br />
           &nbsp; Рецепти, які не залишать байдужим нікого.
         </p>

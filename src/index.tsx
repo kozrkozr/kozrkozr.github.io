@@ -13,10 +13,12 @@ import StepToHealthyFood from './routes/about/StepToHealthyFood';
 import PlacesToEat from './routes/places-to-eat/PlacesToEat';
 import Recipes from './routes/recipes/Recipes';
 import RecipeInfo from './routes/recipes/Recipe-info';
+import ScrollToTop from './components/scroll-to-top/scroll-to-top';
 
 ReactDOM.render(
   <React.StrictMode>
     <BrowserRouter>
+      <ScrollToTop />
       <Routes>
         <Route path="/" element={<App />} />
         <Route path="/books" element={<Books />} />

@@ -3,6 +3,10 @@
 }
 
 .place {
+  &__title {
+    font-family: 'Nagoda', serif;
+  }
+
   &__img {
     height: 196px;
   }

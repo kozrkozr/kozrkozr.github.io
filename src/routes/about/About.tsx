@@ -37,9 +37,11 @@ function About() {
 
   return (
     <div className="about">
-      <Header menuOpened={false} />
-      <div className="about__nav-btn py-16 px-24 mb-52">
-        <NavButton direction={NavButtonDirection.BACK} clickHandler={() => navigate('/')} />
+      <div className="about__header">
+        <Header menuOpened={false} />
+        <div className="about__nav-btn py-16 px-24 mb-52">
+          <NavButton direction={NavButtonDirection.BACK} clickHandler={() => navigate('/')} />
+        </div>
       </div>
 
       <section className="mb-72">

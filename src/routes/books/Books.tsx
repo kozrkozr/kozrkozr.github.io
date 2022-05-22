@@ -17,12 +17,12 @@ function Books() {
 
   return (
     <div>
-      <section className="mb-52">
+      <section className="mb-52 position-sticky">
         <DynamicHeader title={'Книги'} />
       </section>
 
       <section className="mb-72">
-        <img src={`${process.env.PUBLIC_URL}/images/books/page-title.png`} />
+        <div className="page-title-image" style={{ backgroundImage: `url(${process.env.PUBLIC_URL}/images/books/page-title.png)` }} />
       </section>
 
       <section className="mx-24 mb-72">
@@ -43,9 +43,9 @@ function Books() {
         <div className="books-grid">
           {books.map((book, index) => (
             <div className="books-grid__item" key={index.toString()}>
-              <img src={book.coverUrl} />
-              <div className="font-size-sm font-weight-500 line-height-md mb-4">{book.title}</div>
-              <div className="font-size-sm font-weight-500 line-height-md mb-4 color-muted">{book.author}</div>
+              <img src={book.coverUrl} className="mb-12"/>
+              <div className="font-size-sm font-weight-500 line-height-md mb-4 text-align-center">{book.title}</div>
+              <div className="font-size-sm font-weight-500 line-height-md mb-4 color-muted text-align-center">{book.author}</div>
             </div>
           ))}
         </div>

@@ -239,6 +239,10 @@ code {
   margin-bottom: 72px;
 }
 
+.mr-4 {
+  margin-right: 4px;
+}
+
 .mr-12 {
   margin-right: 12px;
 }
@@ -287,6 +291,14 @@ code {
 
 .pl-12 {
   padding-left: 12px;
+}
+
+.pl-20 {
+  padding-left: 20px;
+}
+
+.pl-24 {
+  padding-left: 24px;
 }
 
 .p-12 {
@@ -342,8 +354,13 @@ ul {
   padding: 0;
 
   &.disc {
-    list-style: disc;
+    list-style-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='3' height='10' viewBox='-1 0 2 2'><circle r='1' /></svg>");
   }
+}
+
+ol {
+  margin: 0;
+  padding: 0;
 }
 
 ul.bordered {
@@ -380,7 +397,6 @@ ul.bordered {
 .font-size-lg {
   font-size: 24px;
 }
-
 
 .font-size-xxl {
   font-size: 40px;
@@ -440,4 +456,10 @@ textarea {
 
 .visibility-hidden {
   visibility: hidden;
+}
+
+.position-sticky {
+  position: sticky;
+  top: 0;
+  z-index: 999999;
 }
