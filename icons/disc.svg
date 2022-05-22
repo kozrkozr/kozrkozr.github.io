@@ -1,0 +1,6 @@
+<svg height="100" width="100">
+    <circle cx="80" cy="80" r="50"
+            stroke="black"
+            stroke-width="2"
+            fill="grey" />
+</svg>
