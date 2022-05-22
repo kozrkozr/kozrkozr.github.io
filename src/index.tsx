@@ -14,10 +14,12 @@ import PlacesToEat from './routes/places-to-eat/PlacesToEat';
 import Recipes from './routes/recipes/Recipes';
 import RecipeInfo from './routes/recipes/Recipe-info';
 import ScrollToTop from './components/scroll-to-top/scroll-to-top';
+import Title from './Title';
 
 ReactDOM.render(
   <React.StrictMode>
     <BrowserRouter>
+      <Title />
       <ScrollToTop />
       <Routes>
         <Route path="/" element={<App />} />
