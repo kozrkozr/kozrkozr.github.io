@@ -10,9 +10,9 @@ function StepToHealthyFood() {
       </div>
 
       <section className="background-light-brown px-24 py-40 mb-72">
-        <div className="d-flex justify-end mb-10">
+        <div className="d-flex justify-end align-center mb-10">
           <span className="font-weight-500 font-size-md">Перехід на здорове харчування</span>
-          <img src={`${process.env.PUBLIC_URL}/icons/step.svg`} />
+          <img className="ml-10" src={`${process.env.PUBLIC_URL}/icons/step.svg`} />
         </div>
 
         <div className="font-weight-300">

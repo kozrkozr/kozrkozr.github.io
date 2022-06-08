@@ -33,7 +33,7 @@ function ButtonsRadio<T>({ options, displayOptionFn, handleSelectedOptionFn, ext
       {options.map((option, index) => (
         <div
           className={
-            'font-weight-300 px-24 py-8 text-align-center buttons-radio__option cursor-pointer flex-grow-1' +
+            'font-weight-300 px-24 py-8 text-align-center buttons-radio__option cursor-pointer flex-grow-1 flex-basis-0' +
             hasSelectedClass(option, index)
           }
           key={index}

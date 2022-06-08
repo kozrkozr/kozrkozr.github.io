@@ -37,7 +37,7 @@ function Books() {
         <p className="font-size-sm line-height-md text-align-end mt-12">Книга "М'ясо - для слабаків" - Джозеф Джон</p>
       </section>
 
-      <section className="mx-24">
+      <section className="px-24 mb-60">
         <div className="bordered-title mb-20">Всі книги</div>
 
         <div className="books-grid">

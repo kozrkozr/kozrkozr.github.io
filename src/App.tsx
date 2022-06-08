@@ -96,7 +96,7 @@ function App() {
       <section className="p-24 background-light-brown d-flex flex-column mb-72">
         <div className="d-flex justify-end align-center mb-36">
           <div className="font-weight-md font-size-md">Рецепти</div>
-          <img className="ml-10" src={`${process.env.PUBLIC_URL}/apple-plate.png`} />
+          <img className="ml-10 mb-8" src={`${process.env.PUBLIC_URL}/receipes.svg`} />
         </div>
 
         <div className="mb-36">
@@ -126,7 +126,7 @@ function App() {
           {['Девід Аттенборо: Життя на нашій планеті', 'Роберт Кеннер: Корпорація «Їжа»', 'Лі Фалкерсон: Виделки замість ножів'].map(
             (film, index) => (
               <li className="d-flex align-center" key={index}>
-                <img src={`${process.env.PUBLIC_URL}/icons/circled-play.svg`} />
+                <img src={`${process.env.PUBLIC_URL}/icons/play.svg`} />
                 <span className="ml-24 font-weight-400 font-size-md">{film}</span>
               </li>
             )

@@ -23,13 +23,13 @@ const RecipePreview = ({ recipe }: { recipe: RecipeBase }) => {
 
       <div className="d-flex align-center font-size-sm color-muted">
         {!!recipe.foodType && (
-          <div className="d-flex align-center">
-            <img src={recipe.foodType.type === FoodType.VEGETARIAN ? vegetarianIconUrl : veganIconUrl} />
+          <div className="d-flex align-center mr-12">
+            <img className="mr-4" src={recipe.foodType.type === FoodType.VEGETARIAN ? vegetarianIconUrl : veganIconUrl} />
             <span>{recipe.foodType.name}</span>
           </div>
         )}
-        <div className="d-flex align-center ml-12">
-          <img src={`${process.env.PUBLIC_URL}/icons/clock.svg`} className="mr-4"/>
+        <div className="d-flex align-center">
+          <img src={`${process.env.PUBLIC_URL}/icons/clock2.svg`} className="mr-4 clock-icon"/>
           <span>{recipe.cookingTime} хв</span>
         </div>
         <div className="recipe-preview__complexity ml-12 d-flex align-center">

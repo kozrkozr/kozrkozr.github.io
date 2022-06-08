@@ -94,9 +94,9 @@ function HealthyFood() {
       </section>
 
       <section className="p-24 background-light-brown mb-72">
-        <div className="d-flex justify-end mb-44">
+        <div className="d-flex justify-end align-center mb-44">
           <span className="font-weight-500 font-size-md">Перехід на здорове харчування</span>
-          <img src={`${process.env.PUBLIC_URL}/icons/step.svg`} />
+          <img className="ml-10" src={`${process.env.PUBLIC_URL}/icons/step.svg`} />
         </div>
 
         <p className="font-weight-300 mb-40">Перехід на здорове харчування не повинен бути пропозицією «все або нічого».</p>

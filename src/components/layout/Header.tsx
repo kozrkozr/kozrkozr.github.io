@@ -11,7 +11,7 @@ function Header({ menuOpened }: HeaderProps) {
       <div className={'header__content d-flex align-end' + (menuOpened ? ' opened' : '')}>
         <div className="header__text">{menuOpened ? 'Hello' : 'Healthy Food Blog'}</div>
         <div className="header__logo">
-          <img src={`${process.env.PUBLIC_URL}/header-logo.png`} alt="logo" />
+          <img src={`${process.env.PUBLIC_URL}/healthy.svg`} alt="logo" />
         </div>
       </div>
     </div>

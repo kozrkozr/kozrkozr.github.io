@@ -17,4 +17,10 @@
       }
     }
   }
+
+  .clock-icon {
+    width: 16px;
+    height: 16px;
+    filter: invert(60%) sepia(0%) saturate(1917%) hue-rotate(150deg) brightness(91%) contrast(101%);
+  }
 }
